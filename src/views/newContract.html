@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-    <body>
-        
-    </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <title>Appartment Management</title>
+</head>
+
+<body class="bg-gray-100">
+  <div>
+    <div class="flex items-center py-2 px-10">
+      <a href="./operations.html" class="text-indigo-500 text-xl font-semibold flex items-center justify-center py-2 px-10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>        
+        <span>Back</span>
+      </a>
+    </div>
+    <div class="flex flex-col px-80 align-top">
+      <h4 class="py-10 text-gray-700 text-3xl font-bold text-center">New Contract</h4>
+      <form action="">
+        <div class="flex justify-between">
+          <div class="w-2/5 py-2">
+            <label for="property" class="text-base text-gray-500">Property</label> <br>
+            <select name="property" id="property" class="px-4 py-2 w-full rounded border border-gray-200">
+              <option value="">Chose Property</option>
+              <option value="">First Property</option>
+              <option value="">Second Property</option>
+              <option value="">Third Property</option>
+            </select>
+          </div>
+          <div class="w-2/5 py-2">
+            <label for="pricing" class="text-base text-gray-500">Pricing</label> <br>
+            <select name="pricing" id="pricing" class="px-4 py-2 w-full rounded border border-gray-200">
+              <option value="">Chose Pricing</option>
+              <option value="">First Pricing</option>
+              <option value="">Second Pricing</option>
+              <option value="">Third Pricing</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <div class="w-2/5 py-2">
+            <label for="customer" class="text-base text-gray-500">Customer</label> <br>
+            <select name="customer" id="customer" class="px-4 py-2 w-full rounded border border-gray-200">
+              <option value="">Chose Customer</option>
+              <option value="">First Customer</option>
+              <option value="">Second Customer</option>
+              <option value="">Third Customer</option>
+            </select>
+          </div>
+          <div class="w-2/5 py-2">
+            <label for="pricing" class="text-base text-gray-500">Duration <span class="italic">( in months )</span></label> <br>
+            <input type="number" name="duration" id="duration" class="px-4 py-2 w-full rounded border border-gray-200">
+          </div>
+        </div>
+        <div class="flex justify-center align-middle">
+          <input type="button" value="Submit"
+            class="text-xl px-8 py-3 rounded bg-indigo-500 text-white font-semibold mt-10 hover:bg-opacity-50 hover:border-indigo-500 hover:border-2 hover:text-indigo-500">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
 </html>
